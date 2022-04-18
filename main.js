@@ -1,4 +1,4 @@
-window.onload = questionOne () {
+function questionOne() {
     var hiit = document.getElementById('hiit');
     var strength = document.getElementById('strength');
 
@@ -7,6 +7,8 @@ window.onload = questionOne () {
     //If "Strength" is selected, question 2 needs to ask what muscle group(s) user wants to exercise.
     strength.onclick = document.getElementById('form3').style.display='block';
 }
+
+window.onload = questionOne();
 
 //Limit number of muscle group selections to 2.
 function validateMuscleGroupSelections() {
