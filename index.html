@@ -12,12 +12,34 @@
 
 <body>
     <h1>Let's configurate a workout.</h1>
-    <form id="form">
+    <form id="form1">
         <h2>What type of workout are you looking for?</h2>
-        <input name="workout option" type="radio" type="submit" value="hiit"/>
+        <input name="workoutOption" type="radio" id="hiit"/>
         <label for="hiit">HIIT</label><br>
-        <input name="workout option" type="radio" type="submit" value="strength"/>
+        <input name="workoutOption" type="radio" id="strength"/>
         <label for="strength">Strength</label><br>
     </form> 
+
+    <form id="form2" style="display:none">
+        <h2>What is your age and weight?</h2>
+        <label for="age">Age:</label>
+        <input type="range" id="age" min="15"/><br>
+        <label for="weight">Weight:</label>
+        <input type="range" min="70" max="400">
+    </form>
+
+    <form id="form3" style="display:none">
+        <h2>What muscle group(s) do you want to exercise? Pick up to two.</h2>
+        <input name="muscleGroup" type="checkbox" id="biceps" onclick="validateMuscleGroupSelections()">
+        <label for="biceps">Biceps</label><br>
+        <input name="muscleGroup" type="checkbox" id="triceps" onclick="validateMuscleGroupSelections()">
+        <label for="triceps">Triceps</label><br>
+        <input name="muscleGroup" type="checkbox" id="chest" onclick="validateMuscleGroupSelections()">
+        <label for="chest">Chest</label><br>
+        <input name="muscleGroup" type="checkbox" id="back" onclick="validateMuscleGroupSelections()">
+        <label for="back">Back</label><br>
+        <input name="muscleGroup" type="checkbox" id="shoulders" onclick="validateMuscleGroupSelections()">
+        <label for="shoulders">Shoulders</label>
+    </form>
     
 </body>
