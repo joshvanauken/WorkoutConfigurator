@@ -3,9 +3,9 @@ function questionOne() {
     var strength = document.getElementById('strength');
 
     //If "HIIT" is selected, question 2 needs to ask user about height and weight. 
-    hiit.onclick = document.getElementById('form2').style = 'display:block';
+    hiit.onclick = document.getElementById('form2').style.display='block';
     //If "Strength" is selected, question 2 needs to ask what muscle group(s) user wants to exercise.
-    strength.onclick = document.getElementById('form3').style = 'display:block';
+    strength.onclick = document.getElementById('form3').style.display='block';
 }
 
 window.onload = questionOne();
